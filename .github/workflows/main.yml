@@ -11,8 +11,10 @@ steps:
  -name:Downloading &Installing Essentials
  run:
    Invoke-WebRequest -Uri "https://gitlab.com/chamod12/lm_win- 10_github_rdp/-/raw/main/Downloads.bat”-0utFile "Downloads.bat" cmd /c Downloads.bat
+   
    -name:Connect to LiteManager
-   run:cmd /c show.bat
+    run:cmd /c show.bat
+   
    -name:Time Counter
-   run:cmd /c loop.bat
+    run:cmd /c loop.bat
 
